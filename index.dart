@@ -107,8 +107,8 @@ void Q5() {
 // Q.6: Write a program to check whether an alphabet is a vowel or consonant.
 
 void Q6() {
-  var a = "e";
-  if (a == "aeiouAEIOU") {
+  var a = stdin.readLineSync()!;
+  if (["a","e","i","o","u","A","E","I","O","U"].contains(a)) {
     print('Your alphabet is a vowel');
   } else {
     print('Your alphabet is a consonant');
@@ -213,13 +213,13 @@ void Q10() {
 
   if (b > a) {
     largest = b;
-  } else {
+  } else if (c > a) {
     largest = c;
   }
 
   if (b < a) {
     smallest = b;
-  } else {
+  } else if (c < a) {
     smallest = c;
   }
 
